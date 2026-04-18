@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HelpHub AI — Explore</title>
+  <link rel="stylesheet" href="explorepage.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">H</span>
+      <span class="logo-text">HelpHub AI</span>
+    </div>
+    <ul class="nav-links">
+      <li onclick="window.location.href='mainpage.html'">Dashboard</li>
+      <li class="active">Explore</li>
+      <li onclick="window.location.href='leaderboard.html'">Leaderboard</li>
+      <li onclick="window.location.href='notification.html'">Notifications</li>
+    </ul>
+  </nav>
+
+  <div class="page">
+
+    <div class="hero-banner">
+      <p class="eyebrow">EXPLORE / FEED</p>
+      <h1 class="hero-heading">Browse help requests with filterable<br/>community context.</h1>
+      <p class="hero-sub">Filter by category, urgency, skills, and location to surface the best matches.</p>
+    </div>
+
+    <div class="content-wrapper">
+
+      <aside class="filters-panel">
+        <p class="filters-eyebrow">FILTERS</p>
+        <h2 class="filters-heading">Refine the feed</h2>
+
+        <div class="filter-group">
+          <label class="filter-label">Category</label>
+          <div class="select-wrapper">
+            <select>
+              <option>All categories</option>
+              <option>Web Development</option>
+              <option>Design</option>
+              <option>Career</option>
+            </select>
+            <span class="arrow">&#8964;</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">Urgency</label>
+          <div class="select-wrapper">
+            <select>
+              <option>All urgency levels</option>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </select>
+            <span class="arrow">&#8964;</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">Skills</label>
+          <input class="filter-input" type="text" placeholder="React, Figma, Git/GitHub"/>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label">Location</label>
+          <input class="filter-input" type="text" placeholder="Karachi, Lahore, Remote"/>
+        </div>
+      </aside>
+
+      <div class="feed">
+
+        <div class="req-card">
+          <div class="req-tags">
+            <span class="tag tag-blue">Web Development</span>
+            <span class="tag tag-red">High</span>
+            <span class="tag tag-green">Solved</span>
+          </div>
+          <h4 class="req-title">Need help</h4>
+          <p class="req-body">helpn needed</p>
+          <div class="req-footer">
+            <div>
+              <p class="req-author">Ayesha Khan</p>
+              <p class="req-meta">Karachi • 1 helper interested</p>
+            </div>
+            <button class="btn-details" onclick="window.location.href='detail.html'">Open details</button>
+          </div>
+        </div>
+
+        <div class="req-card">
+          <div class="req-tags">
+            <span class="tag tag-blue">Web Development</span>
+            <span class="tag tag-red">High</span>
+            <span class="tag tag-green">Solved</span>
+          </div>
+          <h4 class="req-title">Need help making my portfolio responsive before demo day</h4>
+          <p class="req-body">My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow evening.</p>
+          <div class="req-skill-tags">
+            <span class="tag tag-gray">HTML/CSS</span>
+            <span class="tag tag-gray">Responsive</span>
+            <span class="tag tag-gray">Portfolio</span>
+          </div>
+          <div class="req-footer">
+            <div>
+              <p class="req-author">Sara Noor</p>
+              <p class="req-meta">Karachi • 1 helper interested</p>
+            </div>
+            <button class="btn-details" onclick="window.location.href='detail.html'">Open details</button>
+          </div>
+        </div>
+
+        <div class="req-card">
+          <div class="req-tags">
+            <span class="tag tag-purple">Design</span>
+            <span class="tag tag-orange">Medium</span>
+            <span class="tag tag-outline">Open</span>
+          </div>
+          <h4 class="req-title">Looking for Figma feedback on a volunteer event poster</h4>
+          <p class="req-body">I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+          <div class="req-skill-tags">
+            <span class="tag tag-gray">Figma</span>
+            <span class="tag tag-gray">Poster</span>
+            <span class="tag tag-gray">Design Review</span>
+          </div>
+          <div class="req-footer">
+            <div>
+              <p class="req-author">Ayesha Khan</p>
+              <p class="req-meta">Lahore • 1 helper interested</p>
+            </div>
+            <button class="btn-details" onclick="window.location.href='detail.html'">Open details</button>
+          </div>
+        </div>
+
+        <div class="req-card">
+          <div class="req-tags">
+            <span class="tag tag-teal">Career</span>
+            <span class="tag tag-green-outline">Low</span>
+            <span class="tag tag-green">Solved</span>
+          </div>
+          <h4 class="req-title">Need mock interview support for internship applications</h4>
+          <p class="req-body">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+          <div class="req-skill-tags">
+            <span class="tag tag-gray">Interview Prep</span>
+            <span class="tag tag-gray">Career</span>
+            <span class="tag tag-gray">Frontend</span>
+          </div>
+          <div class="req-footer">
+            <div>
+              <p class="req-author">Sara Noor</p>
+              <p class="req-meta">Remote • 2 helpers interested</p>
+            </div>
+            <button class="btn-details" onclick="window.location.href='detail.html'">Open details</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

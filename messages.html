@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub AI — Messages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="messages.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">H</div>
+      <span class="brand-name">HelpHub AI</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="window.location.href='dashboard.html'">Dashboard</a></li>
+      <li><a href="#" onclick="window.location.href='explorepage.html'">Explore</a></li>
+      <li><a href="#" class="active" onclick="window.location.href='messages.html'">Messages</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <section class="hero-card">
+      <p class="hero-label">INTERACTION / MESSAGING</p>
+      <h1 class="hero-title">Keep support moving through direct communication.</h1>
+      <p class="hero-sub">Basic messaging gives helpers and requesters a clear follow-up path once a match happens.</p>
+    </section>
+
+    <div class="grid-panel">
+
+      <section class="panel conversation-panel">
+        <p class="panel-label">CONVERSATION STREAM</p>
+        <h2 class="panel-title">Recent messages</h2>
+
+        <div class="message-list">
+          <div class="message-item">
+            <div class="message-meta">
+              <span class="message-route">Ayesha Khan → Sara Noor</span>
+              <span class="message-time">09:45<br>AM</span>
+            </div>
+            <p class="message-body">I checked your portfolio request. Share the breakpoint screenshots and I can suggest fixes.</p>
+          </div>
+
+          <div class="message-item">
+            <div class="message-meta">
+              <span class="message-route">Hassan Ali → Ayesha Khan</span>
+              <span class="message-time">11:10<br>AM</span>
+            </div>
+            <p class="message-body">Your event poster concept is solid. I would tighten the CTA and reduce the background texture.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel send-panel">
+        <p class="panel-label">SEND MESSAGE</p>
+        <h2 class="panel-title">Start a<br>conversation</h2>
+
+        <div class="form-group">
+          <label class="form-label" for="to-field">To</label>
+          <div class="select-wrapper">
+            <select id="to-field" class="form-select">
+              <option>Ayesha Khan</option>
+              <option>Sara Noor</option>
+              <option>Hassan Ali</option>
+            </select>
+            <svg class="select-arrow" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message-field">Message</label>
+          <textarea id="message-field" class="form-textarea" placeholder="Share support details, ask for files, or suggest next steps."></textarea>
+        </div>
+
+        <button class="send-btn">Send</button>
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>

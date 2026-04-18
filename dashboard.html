@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HelpHub AI — Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <span class="logo-icon">H</span>
+      <span class="logo-text">HelpHub AI</span>
+    </div>
+    <ul class="nav-links">
+      <li class="active">Dashboard</li>
+      <li  onclick="window.location.href='explorepage.html'">Explore</li>
+      <li onclick="window.location.href='createrequest.html'">Create Request</li>
+      <li onclick="window.location.href='messages.html'">Messages</li>
+      <li onclick="window.location.href='profile.html'">Profile</li>
+    </ul>
+    <div class="nav-right">
+      <span class="nav-notif" onclick="window.location.href='notification.html'">Notifications</span>
+      <button class="btn-ai" onclick="window.location.href='aicenter.html'">Open AI Center</button>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <div class="main-col">
+
+      <!-- HERO BANNER -->
+      <div class="hero-banner">
+        <p class="eyebrow">DASHBOARD</p>
+        <h1 class="hero-heading">Welcome back, Ayesha Khan.</h1>
+        <p class="hero-sub">Your command center for requests, AI insights, helper momentum, and live community activity.</p>
+      </div>
+
+      <!-- STAT CARDS -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <p class="stat-label">TRUST SCORE</p>
+          <h2 class="stat-num">92%</h2>
+          <p class="stat-desc">Driven by solved requests and consistent support.</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">HELPING</p>
+          <h2 class="stat-num">2</h2>
+          <p class="stat-desc">Requests where you are currently listed as a helper.</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">OPEN REQUESTS</p>
+          <h2 class="stat-num">2</h2>
+          <p class="stat-desc">Community requests currently active across the feed.</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-label">AI PULSE</p>
+          <h2 class="stat-num">1 <span class="stat-num-sm">trends</span></h2>
+          <p class="stat-desc">Trend count detected in the latest request activity.</p>
+        </div>
+      </div>
+
+      <!-- RECENT REQUESTS -->
+      <div class="section-header">
+        <div>
+          <p class="section-eyebrow">RECENT REQUESTS</p>
+          <h2 class="section-heading">What the community needs right now</h2>
+        </div>
+        <button class="btn-pill" onclick="window.location.href='explorepage.html'">Go to feed</button>
+      </div>
+
+      <!-- Request Card 1 -->
+      <div class="req-card">
+        <div class="req-tags">
+          <span class="tag tag-blue">Web Development</span>
+          <span class="tag tag-red">High</span>
+          <span class="tag tag-outline">Open</span>
+        </div>
+        <h4 class="req-title">Need help making my portfolio responsive before demo day</h4>
+        <p class="req-body">My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow evening.</p>
+        <div class="req-skill-tags">
+          <span class="tag tag-gray">HTML/CSS</span>
+          <span class="tag tag-gray">Responsive</span>
+          <span class="tag tag-gray">Portfolio</span>
+        </div>
+        <div class="req-footer">
+          <div>
+            <p class="req-author">Sara Noor</p>
+            <p class="req-meta">Karachi • 1 helper interested</p>
+          </div>
+          <button class="btn-details">Open details</button>
+        </div>
+      </div>
+
+      <!-- Request Card 2 -->
+      <div class="req-card">
+        <div class="req-tags">
+          <span class="tag tag-purple">Design</span>
+          <span class="tag tag-orange">Medium</span>
+          <span class="tag tag-outline">Open</span>
+        </div>
+        <h4 class="req-title">Looking for Figma feedback on a volunteer event poster</h4>
+        <p class="req-body">I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+        <div class="req-skill-tags">
+          <span class="tag tag-gray">Figma</span>
+          <span class="tag tag-gray">Poster</span>
+          <span class="tag tag-gray">Design Review</span>
+        </div>
+        <div class="req-footer">
+          <div>
+            <p class="req-author">Ayesha Khan</p>
+            <p class="req-meta">Lahore • 1 helper interested</p>
+          </div>
+          <button class="btn-details">Open details</button>
+        </div>
+      </div>
+
+      <!-- Request Card 3 -->
+      <div class="req-card">
+        <div class="req-tags">
+          <span class="tag tag-teal">Career</span>
+          <span class="tag tag-green-outline">Low</span>
+          <span class="tag tag-green">Solved</span>
+        </div>
+        <h4 class="req-title">Need mock interview support for internship applications</h4>
+        <p class="req-body">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+        <div class="req-skill-tags">
+          <span class="tag tag-gray">Interview Prep</span>
+          <span class="tag tag-gray">Career</span>
+          <span class="tag tag-gray">Frontend</span>
+        </div>
+        <div class="req-footer">
+          <div>
+            <p class="req-author">Sara Noor</p>
+            <p class="req-meta">Remote • 2 helpers interested</p>
+          </div>
+          <button class="btn-details">Open details</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- AI INSIGHTS -->
+      <div class="sidebar-card">
+        <p class="sidebar-eyebrow">AI INSIGHTS</p>
+        <h3 class="sidebar-heading">Suggested actions for you</h3>
+        <div class="insight-rows">
+          <div class="insight-row">
+            <span class="insight-label">Most requested category</span>
+            <span class="insight-value">Web Development</span>
+          </div>
+          <div class="insight-row">
+            <span class="insight-label">Your strongest trust driver</span>
+            <span class="insight-value">Design Ally</span>
+          </div>
+          <div class="insight-row">
+            <span class="insight-label">AI says you can mentor in</span>
+            <span class="insight-value">HTML/CSS, UI/UX, Career Guidance, Figma</span>
+          </div>
+          <div class="insight-row">
+            <span class="insight-label">Your active requests</span>
+            <span class="insight-value">1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTIFICATIONS -->
+      <div class="sidebar-card">
+        <p class="sidebar-eyebrow">NOTIFICATIONS</p>
+        <h3 class="sidebar-heading">Latest updates</h3>
+        <div class="notif-list">
+
+          <div class="notif-item">
+            <div class="notif-text">
+              <p class="notif-title">New helper matched to your responsive portfolio request</p>
+              <p class="notif-meta">Match • 12 min ago</p>
+            </div>
+            <span class="notif-badge unread">Unread</span>
+          </div>
+
+          <div class="notif-item">
+            <div class="notif-text">
+              <p class="notif-title">Your trust score increased after a solved request</p>
+              <p class="notif-meta">Reputation • 1 hr ago</p>
+            </div>
+            <span class="notif-badge unread">Unread</span>
+          </div>
+
+          <div class="notif-item">
+            <div class="notif-text">
+              <p class="notif-title">AI Center detected rising demand for interview prep</p>
+              <p class="notif-meta">Insight • Today</p>
+            </div>
+            <span class="notif-badge read">Read</span>
+          </div>
+
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+</body>
+</html>

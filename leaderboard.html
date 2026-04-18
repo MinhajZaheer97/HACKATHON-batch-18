@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelpHub AI — Leaderboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="leaderboard.css" />
+</head>
+<body>
+
+  <div class="page-wrapper">
+
+    <div class="hero-and-nav">
+      <section class="hero-card">
+        <p class="hero-label">LEADERBOARD</p>
+        <h1 class="hero-title">Recognize the people who keep the community moving.</h1>
+        <p class="hero-sub">Trust score, contribution count, and badges create visible momentum for reliable helpers.</p>
+      </section>
+
+      <nav class="navbar">
+        <div class="nav-brand">
+          <div class="brand-icon">H</div>
+          <span class="brand-name">HelpHub AI</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" onclick="window.location.href='dashboard.html'">Dashboard</a></li>
+          <li><a href="#" onclick="window.location.href='explorepage.html'">Explore</a></li>
+          <li><a href="#" class="active">Leaderboard</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main-grid">
+
+      <section class="panel rankings-panel">
+        <p class="panel-label">TOP HELPERS</p>
+        <h2 class="panel-title">Rankings</h2>
+
+        <div class="helper-list">
+
+          <div class="helper-row">
+            <div class="avatar dark-teal">HA</div>
+            <div class="helper-info">
+              <p class="helper-name">#2 Hassan Ali</p>
+              <p class="helper-skills">JavaScript, React, Git/GitHub</p>
+            </div>
+            <div class="helper-stats">
+              <p class="trust-pct">88%</p>
+              <p class="contributions">24 contributions</p>
+            </div>
+          </div>
+
+          <div class="row-divider"></div>
+
+          <div class="helper-row">
+            <div class="avatar orange">SN</div>
+            <div class="helper-info">
+              <p class="helper-name">#3 Sara Noor</p>
+              <p class="helper-skills">Python, Data Analysis</p>
+            </div>
+            <div class="helper-stats">
+              <p class="trust-pct">74%</p>
+              <p class="contributions">11 contributions</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="panel badge-panel">
+        <p class="panel-label">BADGE SYSTEM</p>
+        <h2 class="panel-title">Trust and achievement</h2>
+
+        <div class="badge-list">
+
+          <div class="badge-card">
+            <div class="progress-bar">
+              <div class="bar-segment amber" style="width: 12%"></div>
+              <div class="bar-segment olive" style="width: 22%"></div>
+              <div class="bar-segment teal" style="width: 54%"></div>
+              <div class="bar-track-rest"></div>
+            </div>
+            <p class="badge-name">Hassan Ali</p>
+            <p class="badge-tags">Code Rescuer • Bug Hunter</p>
+            <div class="progress-bar">
+              <div class="bar-segment amber" style="width: 10%"></div>
+              <div class="bar-segment olive" style="width: 18%"></div>
+              <div class="bar-segment teal" style="width: 42%"></div>
+              <div class="bar-track-rest"></div>
+            </div>
+          </div>
+
+          <div class="badge-card">
+            <p class="badge-name">Sara Noor</p>
+            <p class="badge-tags">Community Voice</p>
+            <div class="progress-bar">
+              <div class="bar-segment amber" style="width: 10%"></div>
+              <div class="bar-segment olive" style="width: 16%"></div>
+              <div class="bar-segment teal" style="width: 34%"></div>
+              <div class="bar-track-rest"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
